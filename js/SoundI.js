@@ -2,7 +2,7 @@ var Sound = Class.create({
   initialize: function (sound_path) {
     this.sound = new Audio (sound_path);
     this.sound.loop = true;
-    this.sound.volume = 0.5;
+    this.sound.volume = 0.0;
   },
   play: function() {
     this.sound.play ();

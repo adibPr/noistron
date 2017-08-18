@@ -4,78 +4,82 @@
     <meta charset="UTF-8">
     <title>Hello World!</title>
     <link href="../css/nouislider.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/simple-grid.min.css">
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-    <br>
 
-    <audio controls>
-      <source src="../sound/crowd.mp3" type="audio/mpeg">
-    </audio>
-    <br>
+    <div class="container">
+      <div class="row">
 
-    <audio controls>
-      <source src="../sound/sea.mp3" type="audio/mpeg">
-    </audio>
+        <div class="col-4">
+          <div class="sound" data-id="crowd">
+            <div class="label">Crowd</div>
+            <button class="play">Play</button>
+            <button class="stop">Stop</button>
+            <div class="slider"></div>
+          </div>
+        </div>
 
-    <br>
-    <div class="sound" data-id="crowd">
-      <div class="label">Crowd<div>
-      <button class="play">Play</button>
-      <button class="stop">Stop</button>
-      <div class="slider"></div>
+        <div class="col-4">
+          <div class="sound" data-id="fireplace">
+            <div class="label">Fireplace</div>
+            <button class="play">Play</button>
+            <button class="stop">Stop</button>
+            <div class="slider"></div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="sound" data-id="morning">
+            <div class="label">Morning</div>
+            <button class="play">Play</button>
+            <button class="stop">Stop</button>
+            <div class="slider"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <div class="sound" data-id="rain">
+            <div class="label">Rain</div>
+            <button class="play">Play</button>
+            <button class="stop">Stop</button>
+            <div class="slider"></div>
+          </div>
+      </div>
+
+      <div class="col-4">
+        <div class="sound" data-id="sea">
+          <div class="label">Sea</div>
+          <button class="play">Play</button>
+          <button class="stop">Stop</button>
+          <div class="slider"></div>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="sound" data-id="thunder">
+          <div class="label">Thunder</div>
+          <button class="play">Play</button>
+          <button class="stop">Stop</button>
+          <div class="slider"></div>
+        </div>
+      </div>
+
     </div>
-    <br>
 
-    <div class="sound" data-id="fireplace">
-      <div class="label">Fireplace<div>
-      <button class="play">Play</button>
-      <button class="stop">Stop</button>
-      <div class="slider"></div>
-    </div>
-    <br>
-
-    <div class="sound" data-id="morning">
-      <div class="label">Morning<div>
-      <button class="play">Play</button>
-      <button class="stop">Stop</button>
-      <div class="slider"></div>
-    </div>
-    <br>
-
-    <div class="sound" data-id="rain">
-      <div class="label">Rain<div>
-      <button class="play">Play</button>
-      <button class="stop">Stop</button>
-      <div class="slider"></div>
-    </div>
-    <br>
-
-    <div class="sound" data-id="sea">
-      <div class="label">Sea<div>
-      <button class="play">Play</button>
-      <button class="stop">Stop</button>
-      <div class="slider"></div>
-    </div>
-    <br>
-
-    <div class="sound" data-id="thunder">
-      <div class="label">Thunder<div>
-      <button class="play">Play</button>
-      <button class="stop">Stop</button>
-      <div class="slider"></div>
-    </div>
-    <br>
-
-    <div class="sound" data-id="wind">
-      <div class="label">Wind<div>
-      <button class="play">Play</button>
-      <button class="stop">Stop</button>
-      <div class="slider"></div>
+    <div class="row">
+      <div class="col-4">
+        <div class="sound" data-id="wind">
+          <div class="label">Wind</div>
+          <button class="play">Play</button>
+          <button class="stop">Stop</button>
+          <div class="slider"></div>
+        </div>
+      </div>
     </div>
   </body>
 

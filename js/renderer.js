@@ -25,6 +25,7 @@ function prepare_sound (sound_dom) {
 
   // set event
   slider.noUiSlider.on ('change', function (values, handle) {
+    this_sound.play (); // change means play
     this_sound.set_volume (values / 100);
   });
 
